@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brick Breaker</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #cee5d0;
+        font-family: "Carter One", cursive;
+      }
+
+      #canvas {
+        border: 5px solid #000;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #ffbf86;
+      }
+
+      img {
+        display: none;
+      }
+
+      h1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SCORE : <span id="score">0</span></h1>
+    <img id="ball" src="./assets/ball.png" alt="ball" />
+    <img id="brick" src="./assets/brick.png" alt="ball" />
+    <canvas id="canvas" width="1100" height="700"></canvas>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
