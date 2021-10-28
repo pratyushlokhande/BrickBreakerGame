@@ -38,12 +38,33 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+
+      #ltitle,
+      #rtitle {
+        position: absolute;
+        text-align: center;
+        z-index: -1;
+        top: 50%;
+        transform: translatey(-50%) rotate(-90deg);
+        font-size: 10rem;
+        color: #77d970;
+      }
+
+      #ltitle {
+        left: 2%;
+      }
+
+      #rtitle {
+        right: -5%;
+        transform: translatey(-50%) rotate(90deg);
+      }
     </style>
   </head>
   <body>
+    <span id="ltitle">BRICK</span>
+    <span id="rtitle">BREAKER</span>
     <h1>SCORE : <span id="score">0</span></h1>
     <img id="ball" src="./assets/ball.png" alt="ball" />
-    <img id="brick" src="./assets/brick.png" alt="ball" />
     <canvas id="canvas" width="1100" height="700"></canvas>
     <script src="app.js" type="module"></script>
   </body>
